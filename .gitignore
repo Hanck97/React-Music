@@ -1,0 +1,6 @@
+node_modules
+bundle.js*
+debug.log
+public/app.*.js
+public/vendor.*.js
+.vscode
