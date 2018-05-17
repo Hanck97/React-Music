@@ -2,13 +2,13 @@ import React, {Component}from 'react';
 
 
 
-export default class extends React.Component {
+export default class extends Component {
    
 
     render() {
         return (
            <div>
-               HELLO!1
+               HELLO!
            </div>    
         )
     }
