@@ -4,6 +4,7 @@
  */
 import React, {Component} from 'react'
 import HomeHeader from './HomeHeader'
+import Nav from './Nav'
 
 
 export default class  extends Component {
@@ -15,6 +16,7 @@ export default class  extends Component {
         return (
             <div className="container">
                 <HomeHeader />
+                <Nav />
             </div>
         )
 
