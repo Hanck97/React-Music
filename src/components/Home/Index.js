@@ -1,25 +1,23 @@
 /*
- * @Author: Hancock Tong 
- * @Date: 2018-05-14 15:44:49 
+ * @Author: Hancock Tong
+ * @Date: 2018-05-14 15:44:49
  */
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import HomeHeader from './HomeHeader'
 import Nav from './Nav'
 
 
-export default class  extends Component {
-    componentDidMount(){
+export default class extends Component {
+  componentDidMount() {
 
-    }
+  }
 
-    render() {
-        return (
-            <div className="container">
-                <HomeHeader />
-                <Nav />
-            </div>
-        )
-
-    }
-
+  render() {
+    return (
+      <div className="container">
+        <HomeHeader />
+        <Nav />
+      </div>
+    )
+  }
 }

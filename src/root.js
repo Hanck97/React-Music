@@ -3,9 +3,8 @@ import Routers from './routes/index';
 import './static/css/main';
 
 
-
 const Root = () => (
-        <Routers/>
+  <Routers />
 );
 
 export default Root;
