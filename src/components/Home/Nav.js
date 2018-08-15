@@ -1,46 +1,46 @@
 /*
- * @Author: Hancock Tong 
- * @Date: 2018-05-18 22:31:05 
+ * @Author: Hancock Tong
+ * @Date: 2018-05-18 22:31:05
  */
-import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 
 export default class Nav extends Component {
+  render() {
+    return (
+      <ul className="nav">
+        {
 
-    render() {
-
-        return (
-            <ul className="nav">
-                {
-
-                    this.props.tabs.map((item, i) => (
-                        <li 
-                        // className={this.props.pathname === item.path ? 'active' : ''} 
-                        key={i}>
-                        <Link to={`${item.path}`}>{item.text}</Link></li>))
-                }
-            </ul>
-        )
-    }
-};
-Nav.defaultProps = {
-    tabs: [
-        {
-            text: '个性推荐',
-            path: '/',
-        },
-        {
-            text: '新歌',
-            path: '/new',
-        },
-        {
-            text: '排行榜',
-            path: '/rank',
-        },
-        {
-            text: '歌手',
-            path: '/artist',
+          this.props.tabs.map((item, i) => (
+            <li
+              // className={this.props.pathname === item.path ? 'active' : ''}
+              key={i}
+            >
+              <Link to={`${item.path}`}>{item.text}</Link>
+            </li>))
         }
-    ]
+      </ul>
+    )
+  }
+}
+Nav.defaultProps = {
+  tabs: [
+    {
+      text: '个性推荐',
+      path: '/',
+    },
+    {
+      text: '新歌',
+      path: '/new',
+    },
+    {
+      text: '排行榜',
+      path: '/rank',
+    },
+    {
+      text: '歌手',
+      path: '/artist',
+    },
+  ],
 };
