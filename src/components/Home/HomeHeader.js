@@ -27,7 +27,6 @@ export default class HomeHeader extends Component {
             </div>
         </div>
         <div className="music-icon">
-<<<<<<< HEAD
             {/* <Link to={this.props.music.hash && this.props.music.hash && this.props.control.playing !== 'null' ? `/play/#${this.props.music.hash}` : '/play/#null'}>
                 <div className="music-icon-animate ">
                     {
@@ -39,19 +38,6 @@ export default class HomeHeader extends Component {
                     }
                 </div>
             </Link> */}
-=======
-          {/* <Link to={this.props.music.hash && this.props.music.hash && this.props.control.playing !== 'null' ? `/play/#${this.props.music.hash}` : '/play/#null'}>
-                        <div className="music-icon-animate ">
-                            {
-                                ['one', 'two', 'three', 'four'].map((ele, i) => {
-                                    return (
-                                        <span key={i} className={classNames(ele, this.props.music.hash && this.props.music.hash !== 'null' && this.props.control.playing ? 'playing' : 'paused')}></span>
-                                    )
-                                })
-                            }
-                        </div>
-                    </Link> */}
->>>>>>> bcf752a2acd1d4cd3530c57c906c642a86016e86
         </div>
       </div>
     )

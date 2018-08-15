@@ -17,8 +17,6 @@ const API = {
   searchHot: 'api/v3/search/hot',
   searchResult: 'api/v3/search/song',
 }
-<<<<<<< HEAD
 
 export default API;
-=======
->>>>>>> bcf752a2acd1d4cd3530c57c906c642a86016e86
+
