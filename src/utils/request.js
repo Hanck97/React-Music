@@ -3,7 +3,7 @@ const defaultHeaders = {
     'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
 };
 
-const parseJSONFilter = (res) => res.json();
+const parseJSONFilter = res => res.json();
 
 // 使用 fetch 封装
 const get = (uri) => {

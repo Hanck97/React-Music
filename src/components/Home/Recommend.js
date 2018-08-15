@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import request from '../../utils/request';
@@ -80,3 +81,7 @@ export default class extends Component {
     }
 
 }
+=======
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+>>>>>>> bcf752a2acd1d4cd3530c57c906c642a86016e86

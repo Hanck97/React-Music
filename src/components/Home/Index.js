@@ -18,7 +18,10 @@ export default class extends Component {
       <div className="container">
         <HomeHeader />
         <Nav />
+<<<<<<< HEAD
         <Recommend/>
+=======
+>>>>>>> bcf752a2acd1d4cd3530c57c906c642a86016e86
       </div>
     )
   }
