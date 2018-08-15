@@ -24,11 +24,11 @@ export default class extends Component {
     async fetchData() {
         try {
             let response_new_song = await request.asyncGet(`/kugou/${API.new_song}`);
-            // console.log(response_new_song);
-            // console.log(Object.prototype.toString.call(response_new_song));
+            console.log(response_new_song);
+            console.log(Object.prototype.toString.call(response_new_song));
             let data_new_song = await response_new_song.json();
-            // console.log(data_new_song)
-            // console.log(Object.prototype.toString.call(data_new_song))
+            console.log(data_new_song)
+            console.log(Object.prototype.toString.call(data_new_song))
             this.setState({
                 banner: data_new_song.banner,
                 new_song: data_new_song.data,
