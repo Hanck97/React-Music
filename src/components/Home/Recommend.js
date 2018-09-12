@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import request from '../../utils/request';
-import 'babel-polyfill';
 import Slider from 'react-slick';
 import API from '../../utils/API';
-// import SongPlayList from '../../containers/Home/SongPlayList';
+import SongPlayList from '../../containers/Home/SongPlayList';
 import Loading from '../../components/Common/Loading';
 
-export default class extends Component {
+
+export default class Recommend extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -24,11 +24,7 @@ export default class extends Component {
     async fetchData() {
         try {
             let response_new_song = await request.asyncGet(`/kugou/${API.new_song}`);
-            console.log(response_new_song);
-            console.log(Object.prototype.toString.call(response_new_song));
             let data_new_song = await response_new_song.json();
-            console.log(data_new_song)
-            console.log(Object.prototype.toString.call(data_new_song))
             this.setState({
                 banner: data_new_song.banner,
                 new_song: data_new_song.data,
@@ -70,7 +66,7 @@ export default class extends Component {
                             <i className="icon-keyboard_arrow_right"></i>
                         </Link>
                     </div>
-                    {/* <SongPlayList/> */}
+                    <SongPlayList/>
                 </div>
                 :
                 <Loading/>
