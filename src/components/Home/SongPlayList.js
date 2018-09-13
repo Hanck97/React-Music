@@ -36,16 +36,16 @@ export default class SongPlayList extends Component {
     }
 
     render () {
-        const songPlay = this.state.loaded && this.props.totalAlbums.info.map((ele, index) => {
+        const songPlay = this.state.loaded && this.props.totalAlbums.info.map((item, index) => {
             if (index < 9) {
                 return (
                     <li key={index}>
-                        <Link to={`/album/${ele.specialid}`} >
-                            <img src={ele.imgurl.replace(/\{size\}/g,400)}/>
-                            <p>{ele.specialname}</p>
+                        <Link to={`/album/${item.specialid}`} >
+                            <img src={item.imgurl.replace(/\{size\}/g,400)}/>
+                            <p>{item.specialname}</p>
                             <div className="albumTips">
                                 <i className="icon-headset"></i>
-                                <span>{ele.playcount > 9999 ? (ele.playcount / 10000).toFixed(2) + '万': ele.playcount}</span>
+                                <span>{item.playcount > 9999 ? (item.playcount / 10000).toFixed(2) + '万': item.playcount}</span>
                             </div>
                         </Link>
                     </li>
